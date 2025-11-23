@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Evork Festive Color Scheme */
+    --background: 45 100% 98%; /* Ivory #FFFDF7 */
+    --foreground: 28 78% 26%; /* Deep Brown #78350F */
+
+    --card: 45 100% 98%;
+    --card-foreground: 28 78% 26%;
+
+    --popover: 45 100% 98%;
+    --popover-foreground: 28 78% 26%;
+
+    --primary: 45 95% 54%; /* Golden Yellow #FACC15 */
+    --primary-foreground: 28 78% 26%;
+
+    --secondary: 60 86% 95%; /* Soft White #FEFCE8 */
+    --secondary-foreground: 28 78% 26%;
+
+    --muted: 60 86% 95%;
+    --muted-foreground: 28 50% 45%;
+
+    --accent: 25 95% 73%; /* Coral Peach #FDBA74 */
+    --accent-foreground: 28 78% 26%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 45 100% 98%;
+
+    --border: 45 60% 88%;
+    --input: 45 60% 88%;
+    --ring: 45 95% 54%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 45 100% 98%;
+    --sidebar-foreground: 28 78% 26%;
+    --sidebar-primary: 45 95% 54%;
+    --sidebar-primary-foreground: 28 78% 26%;
+    --sidebar-accent: 60 86% 95%;
+    --sidebar-accent-foreground: 28 78% 26%;
+    --sidebar-border: 45 60% 88%;
+    --sidebar-ring: 45 95% 54%;
+  }
+
+  .dark {
+    --background: 28 78% 26%;
+    --foreground: 45 100% 98%;
+
+    --card: 28 70% 22%;
+    --card-foreground: 45 100% 98%;
+
+    --popover: 28 70% 22%;
+    --popover-foreground: 45 100% 98%;
+
+    --primary: 45 95% 54%;
+    --primary-foreground: 28 78% 26%;
+
+    --secondary: 28 60% 18%;
+    --secondary-foreground: 45 100% 98%;
+
+    --muted: 28 60% 18%;
+    --muted-foreground: 45 50% 75%;
+
+    --accent: 25 95% 73%;
+    --accent-foreground: 28 78% 26%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 45 100% 98%;
+
+    --border: 28 50% 30%;
+    --input: 28 50% 30%;
+    --ring: 45 95% 54%;
+    
+    --sidebar-background: 28 70% 22%;
+    --sidebar-foreground: 45 100% 98%;
+    --sidebar-primary: 45 95% 54%;
+    --sidebar-primary-foreground: 28 78% 26%;
+    --sidebar-accent: 28 60% 18%;
+    --sidebar-accent-foreground: 45 100% 98%;
+    --sidebar-border: 28 50% 30%;
+    --sidebar-ring: 45 95% 54%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
