@@ -5,7 +5,7 @@ const Landing = () => {
     const navigate = useNavigate();
     return (<div className="min-h-screen bg-gradient-to-br from-background via-secondary to-accent/20 flex flex-col items-center justify-center p-6">
       <div className="text-center space-y-8 max-w-4xl">
-        {/* Logo and Brand */}
+
         <div className="space-y-4">
           <div className="flex items-center justify-center gap-3">
             <Sparkles className="w-12 h-12 text-primary animate-pulse"/>
@@ -17,7 +17,7 @@ const Landing = () => {
           </p>
         </div>
 
-        {/* Feature Icons */}
+
         <div className="flex justify-center gap-8 py-6">
           <div className="flex flex-col items-center gap-2">
             <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center">
